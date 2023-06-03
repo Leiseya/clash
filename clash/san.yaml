@@ -362,6 +362,19 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
+  - name: 📹 油管音乐
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
   - name: 🎥 奈飞视频
     type: select
     proxies:
@@ -2614,6 +2627,7 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,📹 油管视频
   - DOMAIN-SUFFIX,yt.be,📹 油管视频
   - DOMAIN-SUFFIX,ytimg.com,📹 油管视频
+  - DOMAIN,music.youtube.com,📹 油管音乐
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 奈飞视频
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 奈飞视频
   - DOMAIN-KEYWORD,netflixdnstest,🎥 奈飞视频
