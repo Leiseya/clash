@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-06-03 23:30:23
+# 创建时间：2023-06-03 23:43:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：75
+# 节点数量：57
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,564 +21,438 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14127,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14128,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14131,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14132,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14133,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14129,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r","type":"ss","server":"cdn.kunlun-auto.com","port":14130,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14101,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14102,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14103,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14104,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 05 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14105,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 06 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14106,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 07 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14101,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 08 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14102,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 09 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14103,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 10 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14104,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 11 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14105,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰 香港 12 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14106,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 日本 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14111,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 日本 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14115,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 日本 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14116,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇯🇵 日本 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14117,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 美国 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14112,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 美国 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14118,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 美国 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14119,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇺🇸 美国 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14120,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇰🇷 韩国 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14113,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇰🇷 韩国 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14121,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇰🇷 韩国 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14122,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇰🇷 韩国 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14123,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇨🇳 台湾 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14107,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇨🇳 台湾 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14108,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇨🇳 台湾 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14109,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇨🇳 台湾 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14110,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬 新加坡 01 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14114,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬 新加坡 02 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14124,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬 新加坡 03 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14125,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"🇸🇬 新加坡 04 内网专线\r","type":"ss","server":"cdn.kunlun-auto.com","port":14126,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
-  - {"name":"香港綜合_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hk.tcpbbr.net","port":8388,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港HKT_1","type":"vmess","server":"hkt.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港精品_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hkt.gotochinatown.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港HKT商業_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hgc1.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港宽频2_1","type":"vmess","server":"wtt2.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港宽频1_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.bn.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸 欧美 01 ChatGPT防封 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14127,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 欧美 02 ChatGPT防封 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14128,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 欧美 03 ChatGPT防封 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14131,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 欧美 04 ChatGPT防封 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14132,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 欧美 05 ChatGPT防封 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14133,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14129,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps","type":"ss","server":"cdn.kunlun-auto.com","port":14130,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14101,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14102,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14103,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14104,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 05 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14105,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 06 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14106,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 07 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14101,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 08 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14102,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 09 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14103,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 10 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14104,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 11 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14105,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇭🇰 香港 12 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14106,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 日本 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14111,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 日本 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14115,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 日本 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14116,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇯🇵 日本 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14117,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 美国 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14112,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 美国 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14118,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 美国 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14119,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇺🇸 美国 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14120,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇰🇷 韩国 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14113,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇰🇷 韩国 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14121,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇰🇷 韩国 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14122,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇰🇷 韩国 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14123,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 台湾 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14107,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 台湾 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14108,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 台湾 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14109,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇨🇳 台湾 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14110,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇸🇬 新加坡 01 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14114,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇸🇬 新加坡 02 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14124,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇸🇬 新加坡 03 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14125,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"🇸🇬 新加坡 04 内网专线","type":"ss","server":"cdn.kunlun-auto.com","port":14126,"password":"5e04bc7f-f81a-440e-adf4-f8a720082dc4","cipher":"aes-128-gcm"}
+  - {"name":"香港綜合","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hk.tcpbbr.net","port":8388,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港HKT","type":"vmess","server":"hkt.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港精品","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hkt.gotochinatown.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港HKT商業","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.hgc1.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港宽频2","type":"vmess","server":"wtt2.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"香港宽频1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.bn.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
   - {"name":"defaultName_1","type":"http","server":"ee888ffd-rvzts0-1n7jq.wtt5.p5pv.com","port":22443,"username":"woshinilaohaner@gmail.com","password":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d"}
-  - {"name":"美國硅谷_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.sj.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國洛杉磯_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.static.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國费利蒙_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.fremont.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國西雅圖_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.us.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美國硅谷","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.sj.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美國洛杉磯","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.static.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美國费利蒙","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.fremont.comefromchinatown.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"美國西雅圖","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.us.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
   - {"name":"defaultName_2","type":"http","server":"ee888ffd-rvzts0-1n7jq.denver.p1pv.com","port":443,"username":"woshinilaohaner@gmail.com","password":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d"}
-  - {"name":"英國_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.uk.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"英國","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.uk.tcpbbr.net","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
   - {"name":"defaultName_3","type":"http","server":"ee888ffd-rvzts0-1n7jq.tw4.tcpbbr.net","port":61234,"username":"woshinilaohaner@gmail.com","password":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d"}
-  - {"name":"日本_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.jp.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"韩國_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.kr.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"台湾2_1","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.tw3.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"日本","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.jp.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"韩國","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.kr.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"台湾2","type":"vmess","server":"ee888ffd-rvzts0-1n7jq.tw3.p5pv.com","port":80,"cipher":"auto","uuid":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
   - {"name":"defaultName_4","type":"http","server":"ee888ffd-rvzts0-1n7jq.de.p5pv.com","port":443,"username":"woshinilaohaner@gmail.com","password":"4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d"}
-  - {"name":"香港綜合_2","type":"vmess","server":"80739608-rvzts0-hhly.hk.tcpbbr.net","port":8388,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港HKT_2","type":"vmess","server":"hkt.comefromchinatown.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港精品_2","type":"vmess","server":"80739608-rvzts0-hhly.hkt.gotochinatown.net","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港HKT商業_2","type":"vmess","server":"80739608-rvzts0-hhly.hgc1.tcpbbr.net","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港宽频2_2","type":"vmess","server":"wtt2.comefromchinatown.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"香港宽频1_2","type":"vmess","server":"80739608-rvzts0-hhly.bn.p5pv.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_5","type":"http","server":"80739608-rvzts0-hhly.wtt5.p5pv.com","port":22443,"username":"11472114@qq.com","password":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9"}
-  - {"name":"美國硅谷_2","type":"vmess","server":"80739608-rvzts0-hhly.sj.comefromchinatown.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國洛杉磯_2","type":"vmess","server":"80739608-rvzts0-hhly.static.tcpbbr.net","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國费利蒙_2","type":"vmess","server":"80739608-rvzts0-hhly.fremont.comefromchinatown.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"美國西雅圖_2","type":"vmess","server":"80739608-rvzts0-hhly.us.tcpbbr.net","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_6","type":"http","server":"80739608-rvzts0-hhly.denver.p1pv.com","port":443,"username":"11472114@qq.com","password":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9"}
-  - {"name":"英國_2","type":"vmess","server":"80739608-rvzts0-hhly.uk.tcpbbr.net","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_7","type":"http","server":"80739608-rvzts0-hhly.tw4.tcpbbr.net","port":61234,"username":"11472114@qq.com","password":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9"}
-  - {"name":"日本_2","type":"vmess","server":"80739608-rvzts0-hhly.jp.p5pv.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"韩國_2","type":"vmess","server":"80739608-rvzts0-hhly.kr.p5pv.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"台湾2_2","type":"vmess","server":"80739608-rvzts0-hhly.tw3.p5pv.com","port":80,"cipher":"auto","uuid":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9","alterId":2,"tls":false,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"defaultName_8","type":"http","server":"80739608-rvzts0-hhly.de.p5pv.com","port":443,"username":"11472114@qq.com","password":"0b0f109c-fd6f-11ed-98fa-f23c91cfbbc9"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -601,81 +475,63 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "🇺🇸 欧美 01 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 02 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 03 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 04 ChatGPT防封 限速10Mbps\r"
-      - "🇺🇸 欧美 05 ChatGPT防封 限速10Mbps\r"
-      - "🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps\r"
-      - "🇭🇰 香港 01 内网专线\r"
-      - "🇭🇰 香港 02 内网专线\r"
-      - "🇭🇰 香港 03 内网专线\r"
-      - "🇭🇰 香港 04 内网专线\r"
-      - "🇭🇰 香港 05 内网专线\r"
-      - "🇭🇰 香港 06 内网专线\r"
-      - "🇭🇰 香港 07 内网专线\r"
-      - "🇭🇰 香港 08 内网专线\r"
-      - "🇭🇰 香港 09 内网专线\r"
-      - "🇭🇰 香港 10 内网专线\r"
-      - "🇭🇰 香港 11 内网专线\r"
-      - "🇭🇰 香港 12 内网专线\r"
-      - "🇯🇵 日本 01 内网专线\r"
-      - "🇯🇵 日本 02 内网专线\r"
-      - "🇯🇵 日本 03 内网专线\r"
-      - "🇯🇵 日本 04 内网专线\r"
-      - "🇺🇸 美国 01 内网专线\r"
-      - "🇺🇸 美国 02 内网专线\r"
-      - "🇺🇸 美国 03 内网专线\r"
-      - "🇺🇸 美国 04 内网专线\r"
-      - "🇰🇷 韩国 01 内网专线\r"
-      - "🇰🇷 韩国 02 内网专线\r"
-      - "🇰🇷 韩国 03 内网专线\r"
-      - "🇰🇷 韩国 04 内网专线\r"
-      - "🇨🇳 台湾 01 内网专线\r"
-      - "🇨🇳 台湾 02 内网专线\r"
-      - "🇨🇳 台湾 03 内网专线\r"
-      - "🇨🇳 台湾 04 内网专线\r"
-      - "🇸🇬 新加坡 01 内网专线\r"
-      - "🇸🇬 新加坡 02 内网专线\r"
-      - "🇸🇬 新加坡 03 内网专线\r"
-      - "🇸🇬 新加坡 04 内网专线\r"
-      - 香港綜合_1
-      - 香港HKT_1
-      - 香港精品_1
-      - 香港HKT商業_1
-      - 香港宽频2_1
-      - 香港宽频1_1
+      - 🇺🇸 欧美 01 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 02 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 03 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 04 ChatGPT防封 限速10Mbps
+      - 🇺🇸 欧美 05 ChatGPT防封 限速10Mbps
+      - 🇭🇰 亚洲 01 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 亚洲 02 ChatGPT稳定 限速10Mbps
+      - 🇭🇰 香港 01 内网专线
+      - 🇭🇰 香港 02 内网专线
+      - 🇭🇰 香港 03 内网专线
+      - 🇭🇰 香港 04 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 08 内网专线
+      - 🇭🇰 香港 09 内网专线
+      - 🇭🇰 香港 10 内网专线
+      - 🇭🇰 香港 11 内网专线
+      - 🇭🇰 香港 12 内网专线
+      - 🇯🇵 日本 01 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇯🇵 日本 03 内网专线
+      - 🇯🇵 日本 04 内网专线
+      - 🇺🇸 美国 01 内网专线
+      - 🇺🇸 美国 02 内网专线
+      - 🇺🇸 美国 03 内网专线
+      - 🇺🇸 美国 04 内网专线
+      - 🇰🇷 韩国 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇰🇷 韩国 03 内网专线
+      - 🇰🇷 韩国 04 内网专线
+      - 🇨🇳 台湾 01 内网专线
+      - 🇨🇳 台湾 02 内网专线
+      - 🇨🇳 台湾 03 内网专线
+      - 🇨🇳 台湾 04 内网专线
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇸🇬 新加坡 02 内网专线
+      - 🇸🇬 新加坡 03 内网专线
+      - 🇸🇬 新加坡 04 内网专线
+      - 香港綜合
+      - 香港HKT
+      - 香港精品
+      - 香港HKT商業
+      - 香港宽频2
+      - 香港宽频1
       - defaultName_1
-      - 美國硅谷_1
-      - 美國洛杉磯_1
-      - 美國费利蒙_1
-      - 美國西雅圖_1
+      - 美國硅谷
+      - 美國洛杉磯
+      - 美國费利蒙
+      - 美國西雅圖
       - defaultName_2
-      - 英國_1
+      - 英國
       - defaultName_3
-      - 日本_1
-      - 韩國_1
-      - 台湾2_1
+      - 日本
+      - 韩國
+      - 台湾2
       - defaultName_4
-      - 香港綜合_2
-      - 香港HKT_2
-      - 香港精品_2
-      - 香港HKT商業_2
-      - 香港宽频2_2
-      - 香港宽频1_2
-      - defaultName_5
-      - 美國硅谷_2
-      - 美國洛杉磯_2
-      - 美國费利蒙_2
-      - 美國西雅圖_2
-      - defaultName_6
-      - 英國_2
-      - defaultName_7
-      - 日本_2
-      - 韩國_2
-      - 台湾2_2
-      - defaultName_8
 
 rules:
 # 本地/局域网地址
