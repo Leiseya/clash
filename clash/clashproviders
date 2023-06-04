@@ -320,6 +320,12 @@ rule-providers:
     path: ./RuleSet/Extra/youtubemusic.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
     interval: 86400
+  Tiktok:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/tiktok.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tiktok/Tiktok.yaml
+    interval: 86400
   youtubemusic:
     type: http
     behavior: classical
@@ -381,7 +387,7 @@ rules:
   - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,whatsapp,PROXY
   - RULE-SET,youtubemusic,YoutubeMusic
-  - DOMAIN-SUFFIX,tiktok.com,台湾
+  - RULE-SET,tiktok,Tiktok
 
 
   - GEOIP,LAN,DIRECT
