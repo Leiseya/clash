@@ -1,0 +1,302 @@
+allow-lan: false
+bind-address: 127.0.0.1
+dns:
+  ake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 114.114.114.114
+    - 119.29.29.29
+    - 223.5.5.5
+  enable: true
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+  ipv6: false
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
+  use-hosts: true
+external-controller: 127.0.0.1:19090
+log-level: warning
+mixed-port: 9981
+mode: rule
+proxy-providers:
+  Ghelper:
+    type: http
+    path: ./profiles/Ghelper.yml
+    url: https://d35fc49f.ghelper.me/clash/4f3b56a357398c16c1871f6aa53b6ffd
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  feidieyun:
+    type: http
+    path: ./profiles/feidieyun.yml
+    url: https://5e94aa32.ghelper.me/clash/c2eed1278d7be95bff6cd7458fc1d516
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  chunqiuyun:
+    type: http
+    url: https://c.kunlunoss.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
+    interval: 3600
+proxies: null
+
+proxy-groups:
+
+  - name: 香港
+    type: url-test
+    filter: 香港|hk
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    
+  - name: 台湾
+    filter: 台湾|台灣|tw
+    type: url-test
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 新加坡
+    type: url-test
+    filter: 新加坡|sg|狮城
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300    
+
+  - name: 美国
+    type: url-test
+    filter: 美国|美國|us
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 英国
+    type: url-test
+    filter: 英国|英國|uk
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 日本
+    type: url-test
+    filter: 日本|jp
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 韩国
+    type: url-test
+    filter: 韩国|韩國|kr
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: 德国
+    type: url-test
+    filter: 德国|德國|de
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300    
+
+  - name: PROXY
+    type: select
+    use:
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国
+
+  - name: MATCH
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+         
+  - name: Youtube
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国
+
+  - name: Netflix
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国
+
+  - name: Telegram
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国
+
+  - name: Apple
+    type: select
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国
+
+
+  
+  - name: YoutubeMusic
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国      
+      
+  - name: Streaming
+    type: select
+    proxies:
+      - PROXY
+  - name: StreamingSE
+    type: select
+    proxies:
+      - DIRECT
+      
+      
+
+rule-providers:
+  Unbreak:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Unbreak.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
+    interval: 86400
+  Streaming:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/Streaming.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml
+    interval: 86400
+  ChinaIP:
+    type: http
+    behavior: ipcidr
+    path: ./RuleSet/Extra/ChinaIP.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/ChinaIP.yaml
+    interval: 86400
+  xunlei:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/xunlei.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xunlei/Xunlei.yaml
+    interval: 86400
+  youtubemusic:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/youtubemusic.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+    interval: 86400
+  whatsapp:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/whatsapp.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    interval: 86400
+
+  
+rules:
+  - DOMAIN,music.youtube.com,YoutubeMusic
+
+
+  - RULE-SET,Unbreak,DIRECT
+  - RULE-SET,Global,PROXY
+  - RULE-SET,China,DIRECT
+  - RULE-SET,ChinaIP,DIRECT
+  - RULE-SET,xunlei,DIRECT
+  - RULE-SET,whatsapp,香港
+  - RULE-SET,youtubemusic,YoutubeMusic
+
+  - DOMAIN-SUFFIX,tiktok.com,台湾
+
+
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
+  - MATCH,MATCH
