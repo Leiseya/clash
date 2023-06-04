@@ -100,6 +100,23 @@ proxy-groups:
       - JP
       - KR
       - DE
+  - name: Tiktok
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
       
 
   - name: Netflix
@@ -386,7 +403,7 @@ rules:
   - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,whatsapp,PROXY
   - RULE-SET,youtubemusic,YoutubeMusic
-  - RULE-SET,tiktok,Tiktok
+  - RULE-SET,Tiktok,Tiktok
 
 
   - GEOIP,LAN,DIRECT
