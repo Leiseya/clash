@@ -8,18 +8,21 @@ update-url = https://raw.githubusercontent.com/wyangx/Rules/main/shadowrocket.co
 
 [Proxy Group]
 Proxies = select,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US, interval=600,timeout=5,select=0,url=http://www.gstatic.com/generate_204
+# 应用策略
 YouTube = select,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
-Netflix = select,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
+YouTubeMusic = select,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
+Netflix = select,PROXIES,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,interval=86400,timeout=5,select=0,url=http://www.gstatic.com/generate_204
 Disney = select,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
 TikTok = select,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
 OpenAI = select,Proxies,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
 Apple = select,DIRECT,Proxies,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇸🇬SG,🇺🇸US,select=0
-🇭🇰HK = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=香港
-🇨🇳TW = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=台湾
-🇯🇵JP = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=日本
-🇰🇷KR = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=韩国
-🇸🇬SG = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=(新加坡|狮城)
-🇺🇸US = select,url=http://www.gstatic.com/generate_204,interval=1800,tolerance=10,timeout=5,select=0,policy-regex-filter=美国
+# 自动测速
+🇭🇰HK = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=100,timeout=5,select=1,policy-regex-filter=香港|hk
+🇨🇳TW = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=100,timeout=5,select=6,policy-regex-filter=台湾|台灣|tw
+🇯🇵JP = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=100,timeout=5,select=0,policy-regex-filter=日本|jp
+🇰🇷KR = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=100,timeout=5,select=0,policy-regex-filter=韩国|kr|韓國
+🇸🇬SG = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=10,timeout=5,select=0,policy-regex-filter=新加坡|狮城|sg
+🇺🇸US = url-test,url=http://www.gstatic.com/generate_204,interval=86400,tolerance=10,timeout=5,select=0,policy-regex-filter=美国|us
 
 [Rule]
 # 本地网络-直连
@@ -42,6 +45,8 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,TIKTOK
 # YouTube
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,YOUTUBE
+# YouTube Music
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTubeMusic/YouTubeMusic.list,YOUTUBEMUSIC
 # OpenAI
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,OPENAI
 # 国内域名-直连
