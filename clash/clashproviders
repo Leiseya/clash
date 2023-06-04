@@ -48,7 +48,7 @@ proxies: null
 
 proxy-groups:
 
-  - name: 香港
+  - name: HK
     type: url-test
     filter: 香港|hk
     use:
@@ -59,7 +59,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     
-  - name: 台湾
+  - name: TW
     filter: 台湾|台灣|tw
     type: url-test
     use:
@@ -70,7 +70,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: 新加坡
+  - name: SG
     type: url-test
     filter: 新加坡|sg|狮城
     use:
@@ -81,7 +81,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300    
 
-  - name: 美国
+  - name: US
     type: url-test
     filter: 美国|美國|us
     use:
@@ -92,7 +92,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: 英国
+  - name: UK
     type: url-test
     filter: 英国|英國|uk
     use:
@@ -103,7 +103,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: 日本
+  - name: JP
     type: url-test
     filter: 日本|jp
     use:
@@ -114,7 +114,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: 韩国
+  - name: KR
     type: url-test
     filter: 韩国|韩國|kr
     use:
@@ -125,7 +125,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: 德国
+  - name: DE
     type: url-test
     filter: 德国|德國|de
     use:
@@ -141,13 +141,15 @@ proxy-groups:
     use:
     proxies:
       - SELECT
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国
+      - AUTO
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
   - name: SELECT
     type: select
     use:
@@ -155,6 +157,15 @@ proxy-groups:
       - feidieyun
       - chunqiuyun
     proxies:
+  - name: AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+     
   - name: MATCH
     type: select
     proxies:
@@ -166,50 +177,71 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
+      
 
   - name: Netflix
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
 
   - name: Telegram
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
 
   - name: Apple
     type: select
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
 
 
   
@@ -218,33 +250,36 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国      
+      - PROXY
+      - SELECT
+      - AUTO
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE
   - name: GlobalMedia
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港
-      - 台湾
-      - 美国
-      - 英国  
-      - 日本
-      - 韩国
-      - 德国      
-  - name: Streaming
-    type: select
-    proxies:
       - PROXY
-  - name: StreamingSE
-    type: select
-    proxies:
+      - SELECT
+      - AUTO
       - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+      - UK  
+      - JP
+      - KR
+      - DE    
+
       
       
 
@@ -334,8 +369,11 @@ rule-providers:
 rules:
   
   - RULE-SET,Lan,DIRECT
+  - RULE-SET,Direct,DIRECT
   - RULE-SET,Global,PROXY
   - RULE-SET,China,DIRECT
+  - RULE-SET,Advertising,REJECT
+  
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,xunlei,DIRECT
   - RULE-SET,ChinaMedia,DIRECT
@@ -343,7 +381,6 @@ rules:
   - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,whatsapp,PROXY
   - RULE-SET,youtubemusic,YoutubeMusic
-  - RULE-SET,ChinaMedia,PROXY
   - DOMAIN-SUFFIX,tiktok.com,台湾
 
 
