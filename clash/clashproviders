@@ -140,6 +140,7 @@ proxy-groups:
     type: select
     use:
     proxies:
+      - SELECT
       - 香港
       - 台湾
       - 美国
@@ -147,7 +148,13 @@ proxy-groups:
       - 日本
       - 韩国
       - 德国
-
+  - name: SELECT
+    type: select
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+    proxies:
   - name: MATCH
     type: select
     proxies:
@@ -218,7 +225,18 @@ proxy-groups:
       - 日本
       - 韩国
       - 德国      
-      
+  - name: GlobalMedia
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 香港
+      - 台湾
+      - 美国
+      - 英国  
+      - 日本
+      - 韩国
+      - 德国      
   - name: Streaming
     type: select
     proxies:
@@ -231,12 +249,61 @@ proxy-groups:
       
 
 rule-providers:
-  Unbreak:
+  Lan:
     type: http
     behavior: classical
-    path: ./RuleSet/Unbreak.yaml
-    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
+    path: ./RuleSet/Lan.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
     interval: 86400
+  Direct:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Direct.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml
+    interval: 86400
+  Advertising:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Advertising.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/ChinaMedia.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    interval: 86400
+  xunlei:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/xunlei.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xunlei/Xunlei.yaml
+    interval: 86400
+  Youtube
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/youtubemusic.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+  youtubemusic:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/youtubemusic.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/globalmedia.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+    interval: 86400
+        
+  whatsapp:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/whatsapp.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    interval: 86400  
   Streaming:
     type: http
     behavior: classical
@@ -261,43 +328,26 @@ rule-providers:
     path: ./RuleSet/Extra/ChinaIP.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/ChinaIP.yaml
     interval: 86400
-  xunlei:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Extra/xunlei.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xunlei/Xunlei.yaml
-    interval: 86400
-  youtubemusic:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Extra/youtubemusic.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
-    interval: 86400
-  whatsapp:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Extra/whatsapp.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
-    interval: 86400
+
 
   
 rules:
-  - DOMAIN,music.youtube.com,YoutubeMusic
-
-
-  - RULE-SET,Unbreak,DIRECT
+  
+  - RULE-SET,Lan,DIRECT
   - RULE-SET,Global,PROXY
   - RULE-SET,China,DIRECT
   - RULE-SET,ChinaIP,DIRECT
   - RULE-SET,xunlei,DIRECT
-  - RULE-SET,whatsapp,香港
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,Youtube,Youtube
+  - RULE-SET,GlobalMedia,GlobalMedia
+  - RULE-SET,whatsapp,PROXY
   - RULE-SET,youtubemusic,YoutubeMusic
-
+  - RULE-SET,ChinaMedia,PROXY
   - DOMAIN-SUFFIX,tiktok.com,台湾
 
 
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
   - MATCH,MATCH
 
