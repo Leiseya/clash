@@ -68,15 +68,7 @@ proxy-groups:
       - feidieyun
       - chunqiuyun
     proxies:
-  - name: AUTO
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    use:
-      - Ghelper
-      - feidieyun
-      - chunqiuyun
-     
+
   - name: MATCH
     type: select
     proxies:
@@ -235,7 +227,15 @@ proxy-groups:
       - KR
       - DE    
       
-      
+  - name: AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    use:
+      - Ghelper
+      - feidieyun
+      - chunqiuyun
+         
   - name: HK
     type: url-test
     filter: 香港|hk
