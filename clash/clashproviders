@@ -31,15 +31,6 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  feidieyun:
-    type: http
-    path: ./profiles/feidieyun.yml
-    url: https://5e94aa32.ghelper.me/clash/c2eed1278d7be95bff6cd7458fc1d516
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
   chunqiuyun:
     type: http
     path: ./profiles/chunqiuyun.yml
@@ -66,7 +57,7 @@ proxy-groups:
     type: select
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies:
 
@@ -234,7 +225,7 @@ proxy-groups:
     interval: 300
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
          
   - name: HK
@@ -242,7 +233,7 @@ proxy-groups:
     filter: 香港|hk
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -253,7 +244,7 @@ proxy-groups:
     type: url-test
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -264,7 +255,7 @@ proxy-groups:
     filter: 新加坡|sg|狮城
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -275,7 +266,7 @@ proxy-groups:
     filter: 美国|美國|us
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -286,7 +277,7 @@ proxy-groups:
     filter: 英国|英國|uk
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -297,7 +288,7 @@ proxy-groups:
     filter: 日本|jp
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -308,7 +299,7 @@ proxy-groups:
     filter: 韩国|韩國|kr
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -319,7 +310,7 @@ proxy-groups:
     filter: 德国|德國|de
     use:
       - Ghelper
-      - feidieyun
+        
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
