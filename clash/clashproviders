@@ -34,7 +34,7 @@ proxy-providers:
   chunqiuyun:
     type: http
     path: ./profiles/chunqiuyun.yml
-    url: https://c.kunlunoss.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
+    url: https://www.chun666.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
     interval: 3600
 proxies: null
 
