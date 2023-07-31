@@ -426,13 +426,13 @@ rules:
   - RULE-SET,ChinaMedia,DIRECT
   - RULE-SET,China,DIRECT
   - RULE-SET,ChinaIPs,DIRECT
-  
+  - RULE-SET,youtubemusic,YoutubeMusic
   - RULE-SET,Onedrive,Onedrive
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,iCloud,iCloud 
   - RULE-SET,Apple,Apple
   - RULE-SET,Youtube,Youtube
-  - RULE-SET,youtubemusic,YoutubeMusic
+
   - RULE-SET,Tiktok,Tiktok
   - RULE-SET,Netflix,Netflix
   - RULE-SET,GlobalMedia,GlobalMedia
