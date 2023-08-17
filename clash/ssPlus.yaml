@@ -191,7 +191,7 @@ proxy-groups:
       - 🇸🇬_新加坡_74
       - 🇩🇪_德国_75
       - 🇺🇸_美国_76
-     
+      - 备用1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -274,7 +274,7 @@ proxy-groups:
       - 🇸🇬_新加坡_74
       - 🇩🇪_德国_75
       - 🇺🇸_美国_76
-
+      - 备用1
   - name: 📲 电报消息
     type: select
     proxies:
