@@ -25,7 +25,7 @@ proxy-providers:
   Ghelper:
     type: http
     path: ./profiles/Ghelper.yml
-    url: https://d35fc49f.ghelper.me/clash/4f3b56a357398c16c1871f6aa53b6ffd
+    url: https://07da40d1.ghelper.me/subs/clash/a3cc8e4405d64a1b6d598e8283d5b54a
     interval: 10800
     health-check:
       enable: true
@@ -36,6 +36,10 @@ proxy-providers:
     path: ./profiles/chunqiuyun.yml
     url: https://www.chun666.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
     interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300    
 proxies: null
 
 proxy-groups:
@@ -84,6 +88,7 @@ proxy-groups:
       - JP
       - KR
       - DE
+      - ytm
   - name: YoutubeMusic
     type: select
     url: http://www.gstatic.com/generate_204
@@ -101,6 +106,18 @@ proxy-groups:
       - JP
       - KR
       - DE
+      - ytm
+  - name: ytm
+    type: select
+    filter: 台湾|台灣|tw
+    use:
+      - Ghelper
+        
+      - chunqiuyun
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300         
+   
   - name: Tiktok
     type: select
     url: http://www.gstatic.com/generate_204
@@ -227,7 +244,7 @@ proxy-groups:
       - Ghelper
         
       - chunqiuyun
-         
+
   - name: HK
     type: url-test
     filter: 香港|hk
