@@ -25,7 +25,7 @@ proxy-providers:
   Ghelper:
     type: http
     path: ./profiles/Ghelper.yml
-    url: https://07da40d1.ghelper.me/subs/clash/a3cc8e4405d64a1b6d598e8283d5b54a
+    url: https://f6c23ccc.ghelper.me/subs/clash/a3cc8e4405d64a1b6d598e8283d5b54a
     interval: 10800
     health-check:
       enable: true
