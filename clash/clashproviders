@@ -437,9 +437,10 @@ rule-providers:
 
   
 rules:
+  - RULE-SET,Direct,DIRECT
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,Direct,DIRECT
+
   - RULE-SET,ChinaMedia,DIRECT
   - RULE-SET,China,DIRECT
   - RULE-SET,ChinaIPs,DIRECT
