@@ -68,7 +68,6 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - DIRECT
       - HK
       - TW
       - SG
@@ -83,7 +82,6 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - DIRECT
       - HK
       - TW
       - SG
@@ -101,7 +99,6 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - DIRECT
       - HK
       - TW
       - SG
