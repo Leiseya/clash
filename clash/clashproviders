@@ -25,7 +25,7 @@ proxy-providers:
   Ghelper:
     type: http
     path: ./profiles/Ghelper.yml
-    url: https://f6c23ccc.ghelper.me/subs/clash/a3cc8e4405d64a1b6d598e8283d5b54a
+    url: https://3b0795de.ghelper.me/subs/clash/a3cc8e4405d64a1b6d598e8283d5b54a
     interval: 10800
     health-check:
       enable: true
@@ -34,7 +34,7 @@ proxy-providers:
   chunqiuyun:
     type: http
     path: ./profiles/chunqiuyun.yml
-    url: https://www.chun666.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
+    url: https://www.chun777.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
     interval: 10800
     health-check:
       enable: true
@@ -45,31 +45,22 @@ proxies: null
 proxy-groups:
   - name: PROXY
     type: select
-    use:
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     proxies:
-      - SELECT
-      - AUTO
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
-  - name: SELECT
-    type: select
+      - Others
+
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
         
       - chunqiuyun
-    proxies:
+  
 
-  - name: MATCH
-    type: select
-    proxies:
-      - PROXY
-      - DIRECT
          
   - name: Youtube
     type: select
@@ -77,46 +68,30 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
-      - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
-      - ytm
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
   - name: YoutubeMusic
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
-      - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
-      - ytm
-  - name: ytm
-    type: select
-    filter: 台湾|台灣|tw
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
-        
       - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300         
+
+       
    
   - name: Tiktok
     type: select
@@ -124,17 +99,14 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
-      - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
       
 
   - name: Netflix
@@ -143,107 +115,71 @@ proxy-groups:
     interval: 300
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
-      - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
   - name: iCloud
     type: select
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
       - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
+
   - name: Apple
     type: select
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
       - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
 
   - name: Onedrive
     type: select
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
       - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    use:
+      - Ghelper
+      - chunqiuyun
 
   - name: Microsoft
     type: select
     proxies:
       - PROXY
-      - SELECT
-      - AUTO
       - DIRECT
       - HK
       - TW
       - SG
       - US
-      - UK  
-      - JP
-      - KR
-      - DE
-  
-
-  - name: GlobalMedia
-    type: select
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - PROXY
-      - SELECT
-      - AUTO
-      - DIRECT
-      - HK
-      - TW
-      - SG
-      - US
-      - UK  
-      - JP
-      - KR
-      - DE    
-      
-  - name: AUTO
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
-        
       - chunqiuyun
+  
+
 
   - name: HK
     type: url-test
@@ -289,9 +225,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: UK
+  - name: Others
     type: url-test
-    filter: 英国|英國|uk
+    filter: 日本|jp|韩国|韩國|kr|英国|英國|uk|德国|德國|de|ru|俄罗斯
     use:
       - Ghelper
         
@@ -300,38 +236,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-  - name: JP
-    type: url-test
-    filter: 日本|jp
-    use:
-      - Ghelper
-        
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300
 
-  - name: KR
-    type: url-test
-    filter: 韩国|韩國|kr
-    use:
-      - Ghelper
-        
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300
 
-  - name: DE
-    type: url-test
-    filter: 德国|德國|de
-    use:
-      - Ghelper
-        
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300    
+
       
       
 
@@ -354,12 +261,7 @@ rule-providers:
     path: ./RuleSet/Advertising.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml
     interval: 86400
-  ChinaMedia:
-    type: http
-    behavior: classical
-    path: ./RuleSet/ChinaMedia.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
-    interval: 86400
+
   Youtube:
     type: http
     behavior: classical
@@ -372,18 +274,7 @@ rule-providers:
     path: ./RuleSet/Extra/tiktok.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
     interval: 86400
-  youtubemusic:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Extra/youtubemusic.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
-    interval: 86400
-  GlobalMedia:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Extra/globalmedia.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
-    interval: 86400
+
   iCloud:
     type: http
     behavior: classical
@@ -414,26 +305,20 @@ rule-providers:
     path: ./RuleSet/Global.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml
     interval: 86400
-  China:
-    type: http
-    behavior: classical
-    path: ./RuleSet/China.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml
-    interval: 86400
-  ChinaIPs:
-    type: http
-    behavior: ipcidr
-    path: ./RuleSet/ChinaIPs.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
-    interval: 86400
+
   Netflix:
     type: http
     behavior: ipcidr
     path: ./RuleSet/Netflix.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_IP.yaml
     interval: 86400
-
-
+  
+  Douyin:
+    type: http
+    behavior: ipcidr
+    path: ./RuleSet/Netflix.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml
+    interval: 86400 
 
   
 rules:
@@ -441,10 +326,9 @@ rules:
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Lan,DIRECT
 
-  - RULE-SET,ChinaMedia,DIRECT
-  - RULE-SET,China,DIRECT
-  - RULE-SET,ChinaIPs,DIRECT
-  - RULE-SET,youtubemusic,YoutubeMusic
+
+  - RULE-SET,Douyin,DIRECT
+  - DOMAIN,music.youtube.com,YoutubeMusic
   - RULE-SET,Onedrive,Onedrive
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,iCloud,iCloud 
@@ -453,12 +337,11 @@ rules:
 
   - RULE-SET,Tiktok,Tiktok
   - RULE-SET,Netflix,Netflix
-  - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,Global,PROXY
 
 
 
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,MATCH
+  - MATCH,PROXY
 
