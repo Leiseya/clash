@@ -183,7 +183,7 @@ proxy-groups:
     type: select
     proxies:
 
-    filter: chatgpt
+    filter: ChatGPT
     use:
       - Ghelper
       - chunqiuyun  
