@@ -179,14 +179,15 @@ proxy-groups:
       - Ghelper
       - chunqiuyun
 
-  - name: OpenAI
+  - name: Bing
     type: select
     proxies:
-
-    filter: ChatGPT
-    use:
-      - Ghelper
-      - chunqiuyun  
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
 
   - name: MATCH
     type: select
@@ -309,7 +310,12 @@ rule-providers:
     path: ./RuleSet/Microsoft.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
     interval: 86400
-
+  Bing:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Bing.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    interval: 86400
   
   OpenAI:
     type: http
@@ -359,7 +365,7 @@ rules:
 
   - RULE-SET,Onedrive,Onedrive
   - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Bing,Bing  
   - RULE-SET,iCloud,iCloud 
   - RULE-SET,Apple,Apple
 
