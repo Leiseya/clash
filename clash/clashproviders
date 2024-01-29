@@ -50,7 +50,6 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 300    
 proxies: null    
-proxies: null
 
 proxy-groups:
   - name: PROXY
