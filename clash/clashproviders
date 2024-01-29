@@ -40,6 +40,16 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300    
+  coffee:
+    type: http
+    path: ./profiles/coffee.yml
+    url: https://kitsch0201.xn--xhq8sm16c5ls.com/api/v1/client/subscribe?token=f862e2b121f55e7469d4398e61832bfb&flag=clash
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300    
+proxies: null    
 proxies: null
 
 proxy-groups:
