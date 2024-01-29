@@ -34,7 +34,7 @@ proxy-providers:
   chunqiuyun:
     type: http
     path: ./profiles/chunqiuyun.yml
-    url: https://www.chun777.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
+    url: https://c8d63fdf-1dae-4b81-92ea-50307a05476b.kunluncq.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
     interval: 10800
     health-check:
       enable: true
