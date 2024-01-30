@@ -62,7 +62,7 @@ proxy-groups:
       - SG
       - US
       - Others
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -78,7 +78,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -94,7 +94,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -110,7 +110,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -126,7 +126,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -141,7 +141,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -156,7 +156,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -171,7 +171,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -186,7 +186,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
+    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
     use:
       - Ghelper
       - coffee
@@ -210,7 +210,7 @@ proxy-groups:
 
   - name: HK
     type: url-test
-    filter: 香港|hk
+    filter: 香港|hk|HK
     use:
       - Ghelper
       - coffee
@@ -220,7 +220,7 @@ proxy-groups:
     interval: 300
     
   - name: TW
-    filter: 台湾|台灣|tw
+    filter: 台湾|台灣|tw|TW
     type: url-test
     use:
       - Ghelper
@@ -232,7 +232,7 @@ proxy-groups:
 
   - name: SG
     type: url-test
-    filter: 新加坡|sg|狮城
+    filter: 新加坡|sg|狮城|SG
     use:
       - Ghelper
       - coffee
@@ -243,7 +243,7 @@ proxy-groups:
 
   - name: US
     type: url-test
-    filter: 美国|美國|us
+    filter: 美国|美國|us|US
     use:
       - Ghelper
       - coffee
@@ -254,7 +254,7 @@ proxy-groups:
 
   - name: Others
     type: url-test
-    filter: 日本|jp|韩国|韩國|kr|英国|英國|uk|德国|德國|de|ru|俄罗斯
+    filter: 日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
     use:
       - Ghelper
       - coffee
