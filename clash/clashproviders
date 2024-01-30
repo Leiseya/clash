@@ -62,15 +62,12 @@ proxy-groups:
       - SG
       - US
       - Others
-
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
-  
-
-         
+      
   - name: Youtube
     type: select
     url: http://www.gstatic.com/generate_204
@@ -84,7 +81,9 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
+
   - name: YoutubeMusic
     type: select
     url: http://www.gstatic.com/generate_204
@@ -98,10 +97,9 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
 
-       
-   
   - name: Tiktok
     type: select
     url: http://www.gstatic.com/generate_204
@@ -115,9 +113,9 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
       
-
   - name: Netflix
     type: select
     url: http://www.gstatic.com/generate_204
@@ -131,7 +129,9 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
+
   - name: iCloud
     type: select
     proxies:
@@ -144,6 +144,7 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
 
   - name: Apple
@@ -158,6 +159,7 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
 
   - name: Onedrive
@@ -172,6 +174,7 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
 
   - name: Microsoft
@@ -186,6 +189,7 @@ proxy-groups:
     filter: 香港|hk|台湾|台灣|tw|新加坡|sg|狮城
     use:
       - Ghelper
+      - coffee
       - chunqiuyun
 
   - name: Bing
@@ -209,7 +213,7 @@ proxy-groups:
     filter: 香港|hk
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -220,7 +224,7 @@ proxy-groups:
     type: url-test
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -231,7 +235,7 @@ proxy-groups:
     filter: 新加坡|sg|狮城
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -242,7 +246,7 @@ proxy-groups:
     filter: 美国|美國|us
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
@@ -253,7 +257,7 @@ proxy-groups:
     filter: 日本|jp|韩国|韩國|kr|英国|英國|uk|德国|德國|de|ru|俄罗斯
     use:
       - Ghelper
-        
+      - coffee
       - chunqiuyun
     proxies: 
     url: http://www.gstatic.com/generate_204
