@@ -43,7 +43,7 @@ proxy-providers:
   coffee:
     type: http
     path: ./profiles/coffee.yml
-    url: https://45.137.181.202/api/v1/client/subscribe?token=f862e2b121f55e7469d4398e61832bfb
+    url: https://45.137.181.202/api/v1/client/subscribe?token=f862e2b121f55e7469d4398e61832bfb&flag=clash
     interval: 10800
     health-check:
       enable: true
