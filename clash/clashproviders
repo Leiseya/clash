@@ -1,21 +1,12 @@
 allow-lan: true
 bind-address: 127.0.0.1
-tun:
-  enable: true
-  stack: system
-  dns-hijack:
-    - 'any:53'
-  auto-route: true
-  auto-detect-interface: true
 dns:
-  enable: true
-  prefer-h3: true
-  listen: 0.0.0.0:1053
-  ipv6: true
+  ake-ip-range: 198.18.0.1/16
   default-nameserver:
     - 114.114.114.114
     - 119.29.29.29
     - 223.5.5.5
+<<<<<<< HEAD
   fake-ip-range: 198.18.0.1/16  
   fake-ip-filter:
     - '*'
@@ -34,17 +25,19 @@ dns:
     - https://dns.alidns.com/dns-query      
   fallback:
     - https://dns.google/dns-query
+=======
+  enable: true
+>>>>>>> parent of cdca800 (Update clashproviders)
   fallback-filter:
     geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
     ipcidr:
       - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
+  ipv6: false
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
+  use-hosts: true
 external-controller: 127.0.0.1:19090
 log-level: warning
 mixed-port: 9981
