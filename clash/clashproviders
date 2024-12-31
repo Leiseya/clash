@@ -219,6 +219,15 @@ proxy-groups:
       - Ghelper
       - coffee
       - chunqiuyun
+  - name: Copilot
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US      
 
   - name: Bing
     type: select
@@ -358,6 +367,13 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
     interval: 86400
   
+  Copilot:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Copilot.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
+    interval: 86400
+  
   OpenAI:
     type: http
     behavior: classical
@@ -407,6 +423,7 @@ rules:
   - RULE-SET,Onedrive,Onedrive
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Bing,Bing  
+  - RULE-SET,Copilot,Copilot
   - RULE-SET,iCloud,iCloud 
   - RULE-SET,Apple,Apple
 
