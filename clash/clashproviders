@@ -34,7 +34,7 @@ proxy-providers:
   chunqiuyun:
     type: http
     path: ./profiles/chunqiuyun.yml
-    url: https://c8d63fdf-1dae-4b81-92ea-50307a05476b.kunluncq.com/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
+    url: https://times1738428383.subsizhan.top:9602/v2b/chunqiu/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150ee&flag=clash
     interval: 10800
     health-check:
       enable: true
@@ -273,6 +273,7 @@ rule-providers:
     path: ./RuleSet/Advertising.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml
     interval: 86400
+
   Gemini:
     type: http
     behavior: classical
@@ -292,27 +293,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
     interval: 86400
 
-
-
-
   Tiktok:
     type: http
     behavior: classical
     path: ./RuleSet/tiktok.yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
     interval: 86400
-  Douyin:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Douyin.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml
-    interval: 86400 
-  Byte:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Byte.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ByteDance/ByteDance.yaml
-    interval: 86400     
 
   iCloud:
     type: http
@@ -367,8 +353,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
     interval: 86400
   
-
-
   ChinaMax:
     type: http
     behavior: classical
@@ -376,12 +360,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
     interval: 86400 
 
-  Global:
-    type: http
-    behavior: classical
-    path: ./RuleSet/Global.yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml
-    interval: 86400 
 
 rules:
 
@@ -390,9 +368,6 @@ rules:
   - RULE-SET,Gemini,Gemini  
   - RULE-SET,YoutubeMusic,YoutubeMusic
   - RULE-SET,Youtube,Youtube
-
-  - RULE-SET,Byte,DIRECT
-  - RULE-SET,Douyin,DIRECT
   - RULE-SET,Tiktok,Tiktok
 
   - RULE-SET,Netflix,Netflix
@@ -406,9 +381,6 @@ rules:
   - RULE-SET,iCloud,iCloud 
   - RULE-SET,Apple,Apple
 
-
-
-  - RULE-SET,Global,PROXY
   - RULE-SET,ChinaMax,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
