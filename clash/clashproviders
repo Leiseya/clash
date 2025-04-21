@@ -53,22 +53,34 @@ proxies: null
 
 proxy-groups:
   - name: PROXY
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png  
     type: select
-    url: http://www.gstatic.com/generate_204
-    interval: 300
     proxies:
+      - auto
+      - select
       - HK
       - TW
       - SG
       - US
       - Others
-    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-         
+    include-all: true    
+
+  - name: select
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Select.png
+    type: select
+    include-all: true
+    interval: 300
+    tolerance: 50 
+
+  - name: auto
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50         
+
   - name: Youtube
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -80,6 +92,7 @@ proxy-groups:
       - US
 
   - name: YoutubeMusic
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube_Music.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -91,6 +104,7 @@ proxy-groups:
       - US
 
   - name: Tiktok
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -102,6 +116,7 @@ proxy-groups:
       - US      
 
   - name: Netflix
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -111,13 +126,9 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
 
   - name: Gemini
+    icon: https://brandlogo.org/gemini-icon/4361/
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -129,6 +140,7 @@ proxy-groups:
       - US
 
   - name: OpenAI
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
     type: select
     proxies:
       - PROXY
@@ -139,6 +151,7 @@ proxy-groups:
       - US
 
   - name: Copilot
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Copilot.png
     type: select
     proxies:
       - PROXY
@@ -149,6 +162,7 @@ proxy-groups:
       - US
 
   - name: Bing
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
     proxies:
       - PROXY
@@ -159,6 +173,7 @@ proxy-groups:
       - US
 
   - name: Onedrive
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
     type: select
     proxies:
       - PROXY
@@ -169,6 +184,7 @@ proxy-groups:
       - US
 
   - name: Microsoft
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
       - PROXY
@@ -179,6 +195,7 @@ proxy-groups:
       - US
 
   - name: iCloud
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/iCloud.png
     type: select
     proxies:
       - PROXY
@@ -189,6 +206,7 @@ proxy-groups:
       - US
 
   - name: Apple
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png  
     type: select
     proxies:
       - PROXY
@@ -199,65 +217,52 @@ proxy-groups:
       - US
 
   - name: MATCH
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
       - PROXY
       - DIRECT
 
   - name: HK
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
-    filter: 香港|hk|HK
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     
   - name: TW
-    filter: 台湾|台灣|tw|TW
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
 
   - name: SG
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
-    filter: 新加坡|sg|狮城|SG
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300    
+    interval: 300
+    tolerance: 50
 
   - name: US
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
-    filter: 美国|美國|us|US
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
 
   - name: Others
+
+    include-all: true
+    filter: (?i)日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
     type: url-test
-    filter: 日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
-    proxies: 
-    url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
+
 
 
 
