@@ -71,11 +71,9 @@ proxy-groups:
       - SG
       - US
       - Others
+      - SOCKS5
     filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
          
   - name: Youtube
     type: select
@@ -87,6 +85,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: YoutubeMusic
     type: select
@@ -98,6 +97,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Tiktok
     type: select
@@ -109,6 +109,7 @@ proxy-groups:
       - TW
       - SG
       - US      
+      - SOCKS5
 
   - name: Netflix
     type: select
@@ -120,11 +121,7 @@ proxy-groups:
       - TW
       - SG
       - US
-    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+      - SOCKS5
 
   - name: Gemini
     type: select
@@ -136,6 +133,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: OpenAI
     type: select
@@ -146,6 +144,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Copilot
     type: select
@@ -156,6 +155,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Bing
     type: select
@@ -166,6 +166,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Onedrive
     type: select
@@ -176,6 +177,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Microsoft
     type: select
@@ -186,6 +188,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: iCloud
     type: select
@@ -196,6 +199,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: Apple
     type: select
@@ -206,6 +210,7 @@ proxy-groups:
       - TW
       - SG
       - US
+      - SOCKS5
 
   - name: MATCH
     type: select
@@ -213,13 +218,19 @@ proxy-groups:
       - PROXY
       - DIRECT
 
+
+  - name: SOCKS5
+    type: url-test
+    use:
+      - Socks5
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
   - name: HK
     type: url-test
     filter: 香港|hk|HK
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -227,10 +238,7 @@ proxy-groups:
   - name: TW
     filter: 台湾|台灣|tw|TW
     type: url-test
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -238,10 +246,7 @@ proxy-groups:
   - name: SG
     type: url-test
     filter: 新加坡|sg|狮城|SG
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300    
@@ -249,10 +254,7 @@ proxy-groups:
   - name: US
     type: url-test
     filter: 美国|美國|us|US
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -260,10 +262,7 @@ proxy-groups:
   - name: Others
     type: url-test
     filter: 日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
-    use:
-      - Ghelper
-      - coffee
-      - chunqiuyun
+    include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300
