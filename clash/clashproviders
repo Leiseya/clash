@@ -11,7 +11,7 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-  ipv6: false
+  ipv6: true 
   nameserver:
     - https://223.5.5.5/dns-query
     - https://223.6.6.6/dns-query
@@ -62,41 +62,32 @@ proxies: null
 
 proxy-groups:
   - name: PROXY
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png  
     type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     proxies:
-      - auto
-      - select
       - HK
       - TW
       - SG
       - US
       - Others
-<<<<<<< HEAD
-    include-all: true    
-
-  - name: select
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Select.png
-    type: select
-    include-all: true
-    interval: 300
-    tolerance: 50 
-
-  - name: auto
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50         
-
-=======
       - SOCKS5
-    filter: 香港|hk|HK|台湾|台灣|tw|TW|新加坡|sg|SG|狮城
-    include-all: true
+
+
+  - name: Select
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+      - SOCKS5
+    include-all: true  
          
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
   - name: Youtube
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -109,7 +100,6 @@ proxy-groups:
       - SOCKS5
 
   - name: YoutubeMusic
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube_Music.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -122,7 +112,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Tiktok
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -135,7 +124,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Netflix
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -145,13 +133,9 @@ proxy-groups:
       - TW
       - SG
       - US
-<<<<<<< HEAD
-=======
       - SOCKS5
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
 
   - name: Gemini
-    icon: https://brandlogo.org/gemini-icon/4361/
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -164,11 +148,9 @@ proxy-groups:
       - SOCKS5
 
   - name: OpenAI
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
     type: select
     proxies:
       - PROXY
-      - DIRECT
       - HK
       - TW
       - SG
@@ -176,11 +158,9 @@ proxy-groups:
       - SOCKS5
 
   - name: Copilot
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Copilot.png
     type: select
     proxies:
       - PROXY
-      - DIRECT
       - HK
       - TW
       - SG
@@ -188,7 +168,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Bing
-    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
     proxies:
       - PROXY
@@ -200,7 +179,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Onedrive
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
     type: select
     proxies:
       - PROXY
@@ -212,7 +190,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Microsoft
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
       - PROXY
@@ -224,7 +201,6 @@ proxy-groups:
       - SOCKS5
 
   - name: iCloud
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/iCloud.png
     type: select
     proxies:
       - PROXY
@@ -236,7 +212,6 @@ proxy-groups:
       - SOCKS5
 
   - name: Apple
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png  
     type: select
     proxies:
       - PROXY
@@ -248,7 +223,6 @@ proxy-groups:
       - SOCKS5
 
   - name: MATCH
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
       - PROXY
@@ -264,80 +238,44 @@ proxy-groups:
     interval: 300
 
   - name: HK
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
-    include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
-<<<<<<< HEAD
-=======
     filter: 香港|hk|HK
     include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
     interval: 300
-    tolerance: 50
     
   - name: TW
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
-    include-all: true
-    filter: (?i)台|新北|彰化|TW|Taiwan
+    filter: 台湾|台灣|tw|TW
     type: url-test
-<<<<<<< HEAD
-=======
     include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
     interval: 300
-    tolerance: 50
 
   - name: SG
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
-    include-all: true
-    filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
-<<<<<<< HEAD
-    interval: 300
-    tolerance: 50
-=======
     filter: 新加坡|sg|狮城|SG
     include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
     interval: 300    
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
 
   - name: US
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
-    include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
-<<<<<<< HEAD
-=======
     filter: 美国|美國|us|US
     include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
     interval: 300
-    tolerance: 50
 
   - name: Others
-
-    include-all: true
-    filter: (?i)日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
     type: url-test
-<<<<<<< HEAD
-=======
     filter: 日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
     include-all: true
     proxies: 
     url: http://www.gstatic.com/generate_204
->>>>>>> c77504332eaeaeb672d73c964f27244f01f6a378
     interval: 300
-    tolerance: 50
-
 
 
 
