@@ -66,6 +66,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - SELECT
       - HK
       - TW
       - SG
@@ -74,7 +75,7 @@ proxy-groups:
       - SOCKS5
 
 
-  - name: Select
+  - name: SELECT
     type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
