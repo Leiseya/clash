@@ -79,12 +79,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - PROXY
-      - HK
-      - TW
-      - SG
-      - US
-      - SOCKS5
     include-all: true  
          
   - name: Youtube
