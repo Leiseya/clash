@@ -1,24 +1,4 @@
 proxies:
-- name: 美国硅谷
-  port: 443
-  server: e0f430cb-svc1s0-0-hhly.sj.gotochinatown.net
-  tls: true
-  type: socks5  
-- name: 美国硅谷1
-  port: 443
-  server: 11794021-svn5s0-sx61r0-1n7jq.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 美国硅谷2
-  port: 443
-  server: 72b26d25-svn5s0-0-hhly.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 美国硅谷3
-  port: 443
-  server: 0153fc98-svp0g0-0-hhly.sj.gotochinatown.net
-  tls: true
-  type: socks5  
 - name: 美国测试SOCKS
   port: 443
   server: 9af4a82b-sv6hs0-0-hhly.los.gotochinatown.net
@@ -39,4 +19,18 @@ proxies:
   server: 47a704a1-svn5s0-sx61r0-1n7jq.los.gotochinatown.net
   tls: true
   type: socks5
-
+- name: 美國西雅图2
+  port: 443
+  server: 0d6275e7-sw7j40-0-hhly.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 美国硅谷
+  port: 443
+  server: 25add969-sw7j40-0-hhly.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 美国洛杉矶SOCKS
+  port: 443
+  server: b3e14229-sw7j40-0-hhly.los.gotochinatown.net
+  tls: true
+  type: socks5
