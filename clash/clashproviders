@@ -23,19 +23,10 @@ log-level: warning
 mixed-port: 9981
 mode: rule
 proxy-providers:
-  Socks5:
-    type: http
-    path: ./profiles/Socks5.yml
-    url: https://raw.githubusercontent.com/Leiseya/clash/refs/heads/main/clash/5.yml
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
   Ghelper:
     type: http
     path: ./profiles/Ghelper.yml
-    url: https://ccf9c8ad.ghelper.me/subs/mihomo/0351fd6dccf9c8ada73c07ad5e8c1
+    url: https://5c6b42b4.ghelper.me/clash/c2eed1278d7be95bff6cd7458fc1d516
     interval: 10800
     health-check:
       enable: true
@@ -45,15 +36,6 @@ proxy-providers:
     type: http
     path: ./profiles/chunqiuyun.yml
     url: https://times1738428383.subsizhan.top:9602/v2b/chunqiu/api/v1/client/subscribe?token=bb9ee3f2ccd1d717105cbf7e604150
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300    
-  coffee:
-    type: http
-    path: ./profiles/coffee.yml
-    url: https://45.137.181.202/api/v1/client/subscribe?token=f862e2b121f55e7469d4398e61832b
     interval: 10800
     health-check:
       enable: true
@@ -73,7 +55,7 @@ proxy-groups:
       - SG
       - US
       - Others
-      - SOCKS5
+
 
 
   - name: SELECT
@@ -93,7 +75,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: YoutubeMusic
     type: select
@@ -105,7 +87,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Tiktok
     type: select
@@ -117,7 +99,7 @@ proxy-groups:
       - TW
       - SG
       - US      
-      - SOCKS5
+
 
   - name: Netflix
     type: select
@@ -129,7 +111,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Gemini
     type: select
@@ -141,7 +123,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: OpenAI
     type: select
@@ -151,7 +133,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Copilot
     type: select
@@ -161,7 +143,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Bing
     type: select
@@ -172,7 +154,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Onedrive
     type: select
@@ -183,7 +165,6 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
 
   - name: Microsoft
     type: select
@@ -194,7 +175,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: iCloud
     type: select
@@ -205,7 +186,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: Apple
     type: select
@@ -216,7 +197,7 @@ proxy-groups:
       - TW
       - SG
       - US
-      - SOCKS5
+
 
   - name: MATCH
     type: select
@@ -225,13 +206,6 @@ proxy-groups:
       - DIRECT
 
 
-  - name: SOCKS5
-    type: url-test
-    use:
-      - Socks5
-    proxies: 
-    url: http://www.gstatic.com/generate_204
-    interval: 300
 
   - name: HK
     type: url-test
