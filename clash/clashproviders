@@ -1,0 +1,366 @@
+
+allow-lan: true
+bind-address: 127.0.0.1
+dns:
+  ake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 114.114.114.114
+    - 119.29.29.29
+    - 223.5.5.5
+  enable: true
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+  ipv6: true 
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
+  use-hosts: true
+external-controller: 127.0.0.1:19090
+log-level: warning
+mixed-port: 9981
+mode: rule
+proxy-providers:
+  Ghelper:
+    type: http
+    path: ./profiles/Ghelper.yml
+    url: https://5c6b42b4.ghelper.me/clash/c2eed1278d7be95bff6cd7458fc1d516
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxies: null    
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - SELECT
+      - HK
+      - TW
+      - SG
+      - US
+      - Others
+
+
+
+  - name: SELECT
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+    include-all: true  
+         
+  - name: Youtube
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: YoutubeMusic
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Tiktok
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US      
+
+
+  - name: Netflix
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Gemini
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: OpenAI
+    type: select
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Copilot
+    type: select
+    proxies:
+      - PROXY
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Bing
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Onedrive
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+
+  - name: Microsoft
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: iCloud
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: Apple
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - US
+
+
+  - name: MATCH
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+
+
+
+  - name: HK
+    type: url-test
+    filter: 香港|hk|HK
+    include-all: true
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    
+  - name: TW
+    filter: 台湾|台灣|tw|TW
+    type: url-test
+    include-all: true
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: SG
+    type: url-test
+    filter: 新加坡|sg|狮城|SG
+    include-all: true
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300    
+
+  - name: US
+    type: url-test
+    filter: 美国|美國|us|US
+    include-all: true
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+  - name: Others
+    type: url-test
+    filter: 日本|jp|JP|韩国|韩國|kr|KR|英国|英國|uk|UK|德国|德國|de|DE|ru|RU|俄罗斯
+    include-all: true
+    proxies: 
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+
+
+
+      
+      
+
+rule-providers:
+
+  Advertising:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Advertising.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml
+    interval: 86400
+
+  Gemini:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Gemini.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
+    interval: 86400    
+  YoutubeMusic:
+    type: http
+    behavior: classical
+    path: ./RuleSet/youtubeMusic.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+    interval: 86400
+  Youtube:
+    type: http
+    behavior: classical
+    path: ./RuleSet/youtube.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+
+  Tiktok:
+    type: http
+    behavior: classical
+    path: ./RuleSet/tiktok.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    interval: 86400
+
+  iCloud:
+    type: http
+    behavior: classical
+    path: ./RuleSet/iCloud.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iCloud/iCloud.yaml
+    interval: 86400        
+  Apple:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Apple.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    interval: 86400
+
+  Onedrive:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Onedrive.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+    interval: 86400
+  Copilot:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Copilot.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
+    interval: 86400
+  Bing:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Bing.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    interval: 86400  
+  Microsoft:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Microsoft.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    interval: 86400
+
+  OpenAI:
+    type: http
+    behavior: classical
+    path: ./RuleSet/OpenAI.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    interval: 86400
+
+
+  Netflix:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Netflix.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
+    interval: 86400
+  
+  ChinaMax:
+    type: http
+    behavior: classical
+    path: ./RuleSet/ChinaMax.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+    interval: 86400 
+
+
+rules:
+
+  - RULE-SET,Advertising,REJECT
+
+  - RULE-SET,Gemini,Gemini  
+  - RULE-SET,YoutubeMusic,YoutubeMusic
+  - RULE-SET,Youtube,Youtube
+  - RULE-SET,Tiktok,Tiktok
+
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,OpenAI,OpenAI
+
+  - RULE-SET,Copilot,Copilot  
+  - RULE-SET,Bing,Bing  
+  - RULE-SET,Onedrive,Onedrive
+  - RULE-SET,Microsoft,Microsoft
+
+  - RULE-SET,iCloud,iCloud 
+  - RULE-SET,Apple,Apple
+
+  - RULE-SET,ChinaMax,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,MATCH
